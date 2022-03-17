@@ -1,0 +1,26 @@
+.top--nav {
+    background: #f3f3f3 !important;
+    color: #333;
+    font-size: 10px;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            display: inline-block;
+            padding-right: 8px;
+            a {
+                text-decoration: none;
+                color: #333;
+            }
+        }
+    }
+}
+
+.navbar ul li a{
+    font-size: 13px;
+}
+
+.text-left {
+    text-align: left;
+}

@@ -1,0 +1,45 @@
+.copyright p{
+    font-size: 12px;
+}
+
+.top-footer span{
+    font-size: 12px;
+
+    a{
+        text-decoration: none;
+        padding-left: 10px;
+    }
+}
+
+.text-right{
+    text-align: right;
+}
+
+
+footer {
+    h6{
+        font-size: 18px;
+    }
+    p{
+        font-size: 13px;
+    }
+    .about {
+        p{
+            line-height: 25px;
+            text-align: justify;
+        }
+    }
+
+    .footer-menu{
+        p{
+            line-height: 20px;
+        }
+    }
+
+    .nemads {
+        img{
+            width: 50%;
+        }
+        
+    }
+}

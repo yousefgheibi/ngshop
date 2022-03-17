@@ -1,0 +1,155 @@
+<section class="py-3">
+    <div class="row">
+        <div class="col-md-8">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                 </div>
+                <div class="carousel-inner br-5 shadow">
+                  <div class="carousel-item active">
+                    <img src="../../../assets/imgs/sliders/slide-1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../../../assets/imgs/sliders/slide-2.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <div class="col-md-4 pr-0 d-none d-sm-block">
+            <div class="small-banner pt-md-0 p-md-1 pr-md-0">
+                <img src="../../../assets/imgs/88a36be8d10b77f00f0b809c13a45ebd2b028660_1643014716.jpg" class="shadow w-100 mt-1 mt-md-0" alt="...">
+                <img src="../../../assets/imgs/fb31897e1316cdcfc753796b4947beec26c4d904_1643102343.jpg" class="shadow w-100 mt-2" alt="...">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-3">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 p-5 shadow br-5 bg-white">
+       <div class="row py-3">
+         <div class="col-10"><h3 class="section--title"><i class="fa fa-percent"></i> پیشنهاد شگفت انگیز</h3></div>
+        <div class="col-2 text-left"><a routerLink="products/"class="btn btn-danger">همه محصولات</a></div>
+        </div>
+        <div class="row products">
+          <div *ngFor="let item of productData.slice(0,4);" class="col-6 col-md-3 p-card">
+            <img src="{{item.img}}" alt="{{item.name}}" class="p-3 w-100">
+            <br>
+            <div class="p-2">
+                <p class="name" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100ch;">{{item.name}}</p>
+                <p class="price">{{item.price | currency: '  ' :'symbol-narrow':'4.0'}} تومان</p>
+                <button class="btn btn-danger w-100"  (click)="add2Cart(item)">افزودن به سبد خرید</button>
+            </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+    <div class="row">
+      <div class="col-md-6">
+        <img class="w-100 br-5" src="assets/imgs/home-baaner1.jpg">
+      </div>
+      <div class="col-md-6">
+        <img class="w-100 br-5" src="assets/imgs/home-baaner2.jpg">
+      </div>
+  </div>
+</section>
+
+
+<section class="py-3">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 p-5 shadow br-5 bg-white">
+       <div class="row py-3">
+         <div class="col-10"><h3 class="section--title"><i class="fa fa-percent"></i> محصولات اخیر</h3></div>
+        <div class="col-2 text-left"><a routerLink="products/"class="btn btn-danger">همه محصولات</a></div>
+        </div>
+        <div class="row products">
+          <div *ngFor="let item of productData.slice(0,4);" class="col-6 col-md-3 p-card">
+            <img src="{{item.img}}" alt="{{item.name}}" class="p-3 w-100">
+            <br>
+            <div class="p-2">
+                <p class="name" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100ch;">{{item.name}}</p>
+                <p class="price">{{item.price | currency: '  ' :'symbol-narrow':'4.0'}} تومان</p>
+                <button class="btn btn-danger w-100"  (click)="add2Cart(item)">افزودن به سبد خرید</button>
+            </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section>
+  <div class="row">
+    <div class="col-md-3">
+      <img class="w-100 br-5" src="assets/imgs/home-small-banner-1.jpg">
+    </div>
+    <div class="col-md-3">
+      <img class="w-100 br-5" src="assets/imgs/home-small-banner-2.jpg">
+    </div>
+    <div class="col-md-3">
+      <img class="w-100 br-5" src="assets/imgs/home-small-banner-3.jpg">
+    </div>
+    <div class="col-md-3">
+      <img class="w-100 br-5" src="assets/imgs/home-small-banner-4.jpg">
+    </div>
+</div>
+</section>
+
+
+
+<section class="py-3">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 p-5 shadow br-5 bg-white">
+       <div class="row py-3">
+         <div class="col-10"><h3 class="section--title"><i class="fa fa-percent"></i> پرفروشترین محصولات</h3></div>
+        <div class="col-2 text-left"><a routerLink="products/"class="btn btn-danger">همه محصولات</a></div>
+        </div>
+        <div class="row products">
+          <div *ngFor="let item of productData.slice(0,4);" class="col-6 col-md-3 p-card">
+            <img src="{{item.img}}" alt="{{item.name}}" class="p-3 w-100">
+            <br>
+            <div class="p-2">
+                <p class="name" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100ch;">{{item.name}}</p>
+                <p class="price">{{item.price | currency: '  ' :'symbol-narrow':'4.0'}} تومان</p>
+                <button class="btn btn-danger w-100"  (click)="add2Cart(item)">افزودن به سبد خرید</button>
+            </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-3">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 p-5 shadow br-5 bg-white">
+      <ngx-glide [perView]="6" [showBullets]="false" [showArrows]="false" [dir]="'rtl'" [hoverpause]="true">
+    <div><img class="w-100" src="assets/imgs/brands/b-1.png"></div>
+    <div><img class="w-100" src="assets/imgs/brands/b-2.png"></div>
+    <div><img class="w-100" src="assets/imgs/brands/b-3.png"></div>
+    <div><img class="w-100" src="assets/imgs/brands/b-6.png"></div>
+    <div><img class="w-100" src="assets/imgs/brands/b-8.jpg"></div>
+    <div><img class="w-100" src="assets/imgs/brands/b-9.png"></div>
+  </ngx-glide>
+  </div>
+  </div>
+  </div>
+</section>

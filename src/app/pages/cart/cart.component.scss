@@ -1,0 +1,45 @@
+.cart {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 0px;
+    margin: 20px;
+
+    .center {
+        text-align: center;
+
+        img {
+            text-decoration: none;
+            color: inherit;
+            border: none;
+            outline: none;
+            height: 150px;
+            width: 150px;
+        }
+
+        h3{
+            font-size: 16px;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .item-img {
+        width: 35px;
+    }
+
+    table th {
+        font-size: 0.75rem;
+    }
+
+    table td p,
+    table td .ng-star-inserted {
+        font-size: 0.65rem;
+    }
+
+    li,
+    .btn-save,
+    .products-btn {
+        font-size: 0.75rem;
+    }
+}
